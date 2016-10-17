@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+    <package name="wwfy" extends="struts-default">
+        <action name="loginUser" class="wwfy.user.action.UserAction">
+            <result name="success">/ind.jsp</result>
+            <result name="error">/register.jsp</result>
+        </action>
+        <action name="bookinf" class="wwfy.user.action.wdAction">
+            <result name="success">/inf.jsp</result>
+        </action>
+        <action name="bookde" class="wwfy.user.action.wdeleAction">
+            <result name="desuccess">/desuccess.jsp</result>
+        </action>
+    </package>
+</struts>
